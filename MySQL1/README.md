@@ -1,41 +1,20 @@
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| product_id  | int     |
-| low_fats    | enum    |
-| recyclable  | enum    |
-+-------------+---------+
-product_id is the primary key (column with unique values) for this table.
-low_fats is an ENUM (category) of type ('Y', 'N') where 'Y' means this product is low fat and 'N' means it is not.
-recyclable is an ENUM (category) of types ('Y', 'N') where 'Y' means this product is recyclable and 'N' means it is not.
- 
+# Descrição do Exercício
 
-Write a solution to find the ids of products that are both low fat and recyclable.
+Este repositório contém a solução para o exercício de identificar produtos com baixo teor de gordura e recicláveis.
 
-Return the result table in any order.
+## Objetivo
 
-The result format is in the following example.
+O objetivo do exercício é encontrar os IDs de produtos que são de baixo teor de gordura e recicláveis, utilizando SQL.
 
- 
+## Exemplo
 
-Example 1:
+Dado um banco de dados com a tabela de produtos, os produtos que atendem aos critérios de baixo teor de gordura e recicláveis devem ser selecionados.
 
-Input: 
-Products table:
-+-------------+----------+------------+
-| product_id  | low_fats | recyclable |
-+-------------+----------+------------+
-| 0           | Y        | N          |
-| 1           | Y        | Y          |
-| 2           | N        | Y          |
-| 3           | Y        | Y          |
-| 4           | N        | N          |
-+-------------+----------+------------+
-Output: 
-+-------------+
-| product_id  |
-+-------------+
-| 1           |
-| 3           |
-+-------------+
-Explanation: Only products 1 and 3 are both low fat and recyclable.
+## Tabela de Produtos
+
+| product_id | baixo_teor_de_gordura | reciclável |
+|------------|-----------------------|------------|
+| 1          | S                     | S          |
+| 2          | N                     | S          |
+| 3          | S                     | S          |
+| 4          | N                     | N          |

@@ -1,4 +1,6 @@
-# Write your MySQL query statement below
+## Comando SQL
 
-select product_id from products
-where low_fats = 'Y' and recyclable = 'Y';
+sql
+SELECT product_id
+FROM produtos
+WHERE baixo_teor_de_gordura = 'S' AND reciclável = 'S';
